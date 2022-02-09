@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Tipos de selectores que entran en examen</title>
+        <meta charset="utf-8">
+        <style>
+            .red {
+                color: red;
+            }
+
+            #no {
+                background-color: crimson;
+            }
+
+            * {
+                background-color: burlywood;
+            }
+
+            h1, h2 {
+                font-family: Verdana;
+            }
+
+            ul li {
+                background-color: violet;
+            }
+
+            img:hover {
+                transform: scaleX(-1);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Tipos de selectores que entran en examen</h1>
+        <ol>
+            <li><h2>Clase (class="")</h2></li>
+            <p>El selector de clase nos permite asignar un nombre de clase a todos los elementos que queramos para editarles un parámetro dentro de la etiqueta <em>style</em>.</p>
+            <p class="red">Este párrafo,</p>
+            <p class="red">este otro</p>
+            <p class="red">y este último</p>
+            <p>llevan asignada la misma clase y, de esta manera, puedo editarles el mismo parámetro a los tres a la vez.</p>
+
+            <li><h2>Identificador (id="")</h2></li>
+            <p>El funcionamiento es el mismo que el del selector de clase, solo que <strong id="no">no</strong> se puede asignar el mismo identificador dos veces, por lo que solo nos sirve para editar los parámetros de un elemento.</p>
+            <p>El "no" de arriba lleva asignado un identificador dentro de su etiqueta <em>strong</em>, lo que me permite cambiarle parámetros como el color de fondo.</p>
+
+            <li><h2>Todos los elementos (*)</h2></li>
+            <p>El selector de todos los elementos sirve para asignar el mismo parámetro a todos los elementos de la página. Es más útil si lo utilizas solo para los elementos contenidos en otro elemento, pero eso se explicará en el apartado 5.</p>
+            <p>He utilizado ese selector para cambiar el color de toda la página, aunque también se puede hacer editando la etiqueta <em>body</em>.</p>
+
+            <li><h2>Varios elementos (p, em, h1, h2)</h2></li>
+            <p>El selector de varios elementos se usa para asignar el mismo parámetro a varios tipos de elementos.</p>
+            <p>He asignado con este selector al <em>h1</em> y a todos los <em>h2</em> la fuente de letra <strong>Verdana</strong>.
+
+            <li><h2>Elementos contenidos en otros elementos (ol li)</h2></li>
+            <p>El selector de elementos contenidos en otros elementos es útil cuando tenemos muchos elementos dentro de distintas categorías y solo queremos editar los de una categoría específica.</p>
+            <ul>
+                <li>Todos los apartados</li>
+                <li>de esta lista</li>
+                <li>tienen fondo violeta</li>
+            </ul>
+            <p>porque solo los elementos <em>li</em> dentro de una lista <strong>desordenada</strong> tienen este atributo.</p>
+
+            <li><h2>Sobrevuelo (p:hover)</h2></li>
+            <p>El selector de sobrevuelo nos permite cambiar los parámetros de cualquier elemento solo si el ratón se encuentra <strong>encima</strong> del elemento.</p>
+            <img id="amogos" src="imgs/amogos.png" alt="amogos" width="100">
+            <p>Esta imagen, por ejemplo, se invierte cuando pasamos el ratón por encima gracias al parámetro <em>transform: scaleX</em>.</p>
+        </ol>
+    </body>
+</html>

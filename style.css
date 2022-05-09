@@ -13,6 +13,11 @@
   background-color: #4d94ff;
 }
 
+#java {
+  font-family: Century Gothic;
+  background-color: #ffff4d
+}
+
 h1, h2, ol {
   text-align: center;
 }
